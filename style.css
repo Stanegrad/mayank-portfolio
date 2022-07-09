@@ -4,11 +4,20 @@
     text-decoration: none;
     list-style: none;
 }
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 body {
     background-color: #151e3d;
     color: white ;
 }
+
+/* nav section */
 
 nav {
     color: white;
@@ -19,19 +28,55 @@ nav {
     
 }
 
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 40px;
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1em;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+nav a:hover,
+nav a:focus {
+	outline: none;
 }
 
-nav ul li a:hover {
-    color: #00F2DE;
+.cl-effect-13 a {
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.cl-effect-13 a::before {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	color: transparent;
+	content: '•';
+	text-shadow: 0 0 transparent;
+	font-size: 0.8em;
+	-webkit-transition: text-shadow 0.3s, color 0.3s;
+	-moz-transition: text-shadow 0.3s, color 0.3s;
+	transition: text-shadow 0.3s, color 0.3s;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+	pointer-events: none;
+}
+
+.cl-effect-13 a:hover::before,
+.cl-effect-13 a:focus::before {
+	color: #00F2DE;
+	text-shadow: 10px 0 #00F2DE, -10px 0 #00F2DE;
+}
+
+.cl-effect-13 a:hover,
+.cl-effect-13 a:focus {
+	color: #00F2DE;
 }
 
 
@@ -54,3 +99,4 @@ h1 {
 .a3 {
     font-size: 24px;
 }
+

@@ -15,6 +15,7 @@
 body {
     background-color: #151e3d;
     color: white ;
+    font-family: sora, sans-serif;
 }
 
 /* nav section */
@@ -79,24 +80,25 @@ nav a:focus {
 	color: #00F2DE;
 }
 
+/* home section */
 
-.a2 {
+.home-div-a {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.home-p-1 {
     color: #00F2DE;
     font-size: 32px;
     padding-bottom: 40px;
 }
 
-.a-div {
-    text-align: center;
-    margin-top: 100px;
-}
-
-h1 {
+.home-h1 {
     font-size: 48px;
     padding-bottom: 20px;
 }
 
-.a3 {
+.home-p-2 {
     font-size: 24px;
 }
 

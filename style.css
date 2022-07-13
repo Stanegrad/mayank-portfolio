@@ -82,6 +82,10 @@ nav a:focus {
 
 /* home section */
 
+.home {
+	height: 80vh;
+}
+
 .home-div-a {
     text-align: center;
     margin-top: 100px;
@@ -102,3 +106,23 @@ nav a:focus {
     font-size: 24px;
 }
 
+/* about section */
+
+.about {
+	height: 100vh;
+	width: 100vw;
+}
+
+.about-heading {
+	font-size: 2rem;
+	text-align: center;
+}
+.about-d1 {
+	width: 40%;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+h1{
+	text-align: center;
+}

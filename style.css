@@ -73,6 +73,7 @@ nav a:focus {
 .cl-effect-13 a:focus::before {
 	color: #00F2DE;
 	text-shadow: 10px 0 #00F2DE, -10px 0 #00F2DE;
+	
 }
 
 .cl-effect-13 a:hover,
@@ -126,3 +127,14 @@ nav a:focus {
 h1{
 	text-align: center;
 }
+
+.dot {
+	height: 65px;
+	width: 65px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	opacity: 30%;
+	margin-top: 80px;
+	
+  }
